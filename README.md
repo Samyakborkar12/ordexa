@@ -1,11 +1,17 @@
-<div align="center">
+# ORDEXA
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+**One Platform. Every Queue. Real-Time.**
 
-  <h1>Built with AI Studio</h2>
+ORDEXA is a configurable, real-time customer-flow and queue-management SaaS platform.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Features
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+- **No Hardcoded Demo Organizations:** Starts in a clean, pristine empty state. Organizations, services, and counters are created live by administrators.
+- **Fair, Unified Queueing:** Seamlessly manages both online mobile queue arrivals and physical walk-in kiosk tickets.
+- **Real-Time Cross-Window Synchronization:** Actions taken by operators in the Admin Console (Call Next, Recall, Hold, Skip, Complete) immediately update waiting customers in real-time.
+- **Dynamic Queue Positions & ETAs:** Continuously calculates live queue positions and estimated wait durations.
+- **API-Ready Architecture:** Designed with clean separation of presentation and repository layers for effortless future migration to FastAPI and PostgreSQL/Neon.
 
-</div>
+## License
+
+MIT License.

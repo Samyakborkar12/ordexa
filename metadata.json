@@ -1,0 +1,6 @@
+{
+  "name": "ORDEXA — Real-Time Queue Management",
+  "description": "One Platform. Every Queue. Real-Time. Configurable customer-flow and queue-management platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

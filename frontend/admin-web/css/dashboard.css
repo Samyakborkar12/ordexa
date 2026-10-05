@@ -1,0 +1,79 @@
+/* Admin Dashboard View */
+.setup-guide-card {
+  background: linear-gradient(135deg, #0B132B 0%, #1E293B 100%);
+  color: #FFFFFF;
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  margin-bottom: 28px;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.setup-guide-title {
+  font-size: var(--font-size-xl);
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+
+.setup-guide-desc {
+  font-size: var(--font-size-sm);
+  color: #94A3B8;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.setup-steps-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.setup-step-box {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-md);
+  padding: 16px;
+}
+
+.setup-step-num {
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+  background-color: var(--primary-blue);
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.setup-step-name {
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+
+.setup-step-status {
+  font-size: 11px;
+  color: #94A3B8;
+}
+
+/* Quick Action Bar */
+.dashboard-actions-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+/* Grid layout for Dashboard content */
+.dashboard-columns {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}

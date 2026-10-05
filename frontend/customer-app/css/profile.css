@@ -1,0 +1,82 @@
+/* Customer Profile & Settings */
+.profile-card-header {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+  box-shadow: var(--shadow-sm);
+}
+
+.profile-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-full);
+  background-color: var(--primary-navy);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.profile-info-main {
+  flex: 1;
+}
+
+.profile-name {
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 2px;
+}
+
+.profile-email {
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+}
+
+.settings-group {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: var(--space-4);
+}
+
+.settings-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--border-subtle);
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text-main);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  transition: background 0.15s;
+}
+
+.settings-item:last-child {
+  border-bottom: none;
+}
+
+.settings-item:hover {
+  background-color: var(--bg-surface-alt);
+}
+
+.settings-item-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.settings-icon {
+  color: var(--text-secondary);
+}

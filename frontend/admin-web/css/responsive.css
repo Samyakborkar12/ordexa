@@ -1,0 +1,46 @@
+/* Admin Responsive Adjustments */
+
+@media (max-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .setup-steps-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .queue-board-grid {
+    grid-template-columns: 1fr;
+  }
+  .dashboard-columns {
+    grid-template-columns: 1fr;
+  }
+  .analytics-metric-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+  }
+
+  .admin-sidebar.mobile-open {
+    transform: translateX(0);
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-content-area {
+    padding: 16px;
+  }
+
+  .admin-topbar {
+    padding: 0 16px;
+  }
+}

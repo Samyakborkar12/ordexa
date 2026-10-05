@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 200" fill="none">
+  <!-- ORDEXA Wordmark Matching Official Brand Asset -->
+  <defs>
+    <style>
+      .wm-navy { fill: #032159; }
+      .wm-blue { fill: #0A66FF; }
+    </style>
+  </defs>
+
+  <!-- Letter O -->
+  <path class="wm-navy" fill-rule="evenodd" d="M 125 155 C 80 155 45 125 45 80 C 45 35 80 5 125 5 C 170 5 205 35 205 80 C 205 125 170 155 125 155 Z M 125 120 C 148 120 168 102 168 80 C 168 58 148 40 125 40 C 102 40 82 58 82 80 C 82 102 102 120 125 120 Z" />
+
+  <!-- Letter R -->
+  <path class="wm-navy" fill-rule="evenodd" d="M 235 152 L 235 8 L 315 8 C 352 8 378 28 378 60 C 378 85 360 102 334 108 L 382 152 L 340 152 L 298 112 L 272 112 L 272 152 Z M 272 40 L 312 40 C 330 40 342 50 342 62 C 342 74 330 84 312 84 L 272 84 Z" />
+
+  <!-- Letter D -->
+  <path class="wm-navy" fill-rule="evenodd" d="M 405 152 L 405 8 L 475 8 C 525 8 565 42 565 80 C 565 118 525 152 475 152 Z M 442 40 L 472 40 C 505 40 528 58 528 80 C 528 102 505 120 472 120 L 442 120 Z" />
+
+  <!-- Letter E -->
+  <path class="wm-navy" d="M 590 152 L 590 8 L 685 8 L 685 40 L 627 40 L 627 65 L 678 65 L 678 95 L 627 95 L 627 120 L 685 120 L 685 152 Z" />
+
+  <!-- Letter X -->
+  <!-- Main X Body (Navy) -->
+  <path class="wm-navy" d="M 700 8 L 748 8 L 795 72 L 760 115 L 702 152 L 738 152 L 780 122 L 822 152 L 858 152 L 798 105 L 818 78 L 778 78 L 748 44 L 700 8 Z" />
+  <!-- Upper-Right Accent Arm of X (Vibrant Blue #0A66FF) -->
+  <polygon points="782,68 812,28 850,8 820,48" class="wm-blue" />
+  <polygon points="775,76 812,28 842,8 815,62" class="wm-blue" />
+  <path class="wm-blue" d="M 785 70 L 825 8 L 860 8 L 812 78 Z" />
+
+  <!-- Letter A (Modern Geometric Chevron Arch) -->
+  <path class="wm-navy" d="M 830 152 L 878 8 L 912 8 L 960 152 L 920 152 L 895 65 L 870 152 Z" transform="translate(18, 0)" />
+</svg>

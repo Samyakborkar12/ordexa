@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <!-- Gradients matching official ORDEXA branding -->
+    <linearGradient id="roofGrad" x1="120" y1="100" x2="380" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#053B94" />
+      <stop offset="60%" stop-color="#032563" />
+      <stop offset="100%" stop-color="#021C4F" />
+    </linearGradient>
+
+    <linearGradient id="rampGrad" x1="160" y1="280" x2="420" y2="440" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0047BA" />
+      <stop offset="40%" stop-color="#0561F2" />
+      <stop offset="100%" stop-color="#0A66FF" />
+    </linearGradient>
+
+    <linearGradient id="chevronGrad" x1="330" y1="200" x2="430" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B69FF" />
+      <stop offset="100%" stop-color="#0052D4" />
+    </linearGradient>
+  </defs>
+
+  <!-- Hexagonal Upper Canopy / Roof -->
+  <path d="M 285 85 L 150 162 C 120 180 100 210 100 245 L 100 325 C 100 355 125 385 160 380 L 195 372 C 145 370 140 330 140 295 L 140 235 C 140 215 152 195 172 182 L 285 118 L 328 142 L 328 120 Z" fill="url(#roofGrad)" />
+  <path d="M 172 182 L 285 118 L 328 142 L 260 180 L 140 240 Z" fill="#042C74" opacity="0.6"/>
+
+  <!-- Left Enclosure Wall -->
+  <path d="M 100 245 L 100 325 C 100 365 130 385 175 380 L 140 360 C 130 350 128 335 128 315 L 128 230 C 128 205 140 188 158 178 L 148 165 C 118 182 100 210 100 245 Z" fill="#032159"/>
+
+  <!-- 3 Customer Silhouettes in Queue -->
+  <!-- 1. Left Customer (Waiting) -->
+  <circle cx="188" cy="256" r="22" fill="#0B3782" />
+  <path d="M 160 328 C 160 295 172 284 188 284 C 204 284 216 295 216 328 Z" fill="#0B3782" />
+
+  <!-- 2. Middle Customer (Active Focus - Vibrant Cyan/Blue) -->
+  <circle cx="238" cy="232" r="25" fill="#0862F5" />
+  <path d="M 208 320 C 208 278 221 264 238 264 C 255 264 268 278 268 320 Z" fill="#0862F5" />
+
+  <!-- 3. Right Customer (Next Up / Approaching Counter) -->
+  <circle cx="298" cy="204" r="29" fill="#042766" />
+  <path d="M 264 300 C 264 250 279 236 298 236 C 317 236 332 250 332 300 Z" fill="#042766" />
+
+  <!-- Lower Hexagonal Base / Cradle Track -->
+  <path d="M 140 365 C 175 385 240 395 320 345 L 415 295 C 418 293 420 288 418 285 L 398 272 C 395 270 390 271 386 273 L 305 325 C 240 365 190 355 160 342 L 140 365 Z" fill="#0A66FF" />
+  <path d="M 180 380 C 250 445 350 445 415 370 L 415 295 C 360 390 260 410 180 380 Z" fill="url(#rampGrad)"/>
+
+  <!-- Forward Queue Throughput Chevrons (>> Fast Flow) -->
+  <!-- Chevron 1 -->
+  <path d="M 335 215 L 368 248 C 372 252 372 258 368 262 L 340 290 L 362 290 L 390 262 C 394 258 394 252 390 248 L 357 215 Z" 
+        fill="url(#chevronGrad)" />
+
+  <!-- Chevron 2 -->
+  <path d="M 368 215 L 401 248 C 405 252 405 258 401 262 L 373 290 L 395 290 L 423 262 C 427 258 427 252 423 248 L 390 215 Z" 
+        fill="url(#chevronGrad)" />
+</svg>

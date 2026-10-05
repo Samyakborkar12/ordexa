@@ -1,0 +1,72 @@
+/* Authentication Views */
+.auth-wrapper {
+  padding: var(--space-6) var(--space-2);
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: var(--space-6);
+}
+
+.auth-logo {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto var(--space-3) auto;
+  display: block;
+}
+
+.auth-title {
+  font-size: var(--font-size-2xl);
+  font-weight: 800;
+  color: var(--primary-navy);
+  margin-bottom: var(--space-1);
+}
+
+.auth-subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+/* Role Switcher in Auth */
+.role-toggle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--bg-surface-alt);
+  padding: 4px;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-6);
+  border: 1px solid var(--border-subtle);
+}
+
+.role-toggle-btn {
+  padding: 0.6rem;
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  border: none;
+  background: none;
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.role-toggle-btn.active {
+  background-color: var(--bg-surface);
+  color: var(--primary-blue);
+  box-shadow: var(--shadow-sm);
+}
+
+.auth-footer {
+  margin-top: var(--space-6);
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+.auth-footer a {
+  font-weight: 600;
+  margin-left: 4px;
+}

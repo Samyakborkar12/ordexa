@@ -1,0 +1,59 @@
+/* Mobile App Viewport Responsiveness */
+
+/* Phone Viewports: 360px, 375px, 390px, 412px, 430px */
+@media (max-width: 480px) {
+  body {
+    background-color: var(--bg-page);
+  }
+  
+  .app-container {
+    max-width: 100%;
+    min-height: 100vh;
+    box-shadow: none;
+  }
+  
+  .bottom-nav {
+    max-width: 100%;
+  }
+
+  .sticky-bottom-action {
+    max-width: 100%;
+  }
+}
+
+/* Tablet & Desktop Framing */
+@media (min-width: 481px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    min-height: 100vh;
+    background: radial-gradient(circle at 50% 30%, #1E293B 0%, #0B132B 100%);
+  }
+
+  .app-container {
+    width: 100%;
+    max-width: var(--app-max-width);
+    min-height: 840px;
+    height: 88vh;
+    border-radius: 36px;
+    border: 8px solid #334155;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+  }
+
+  .app-content {
+    overflow-y: auto;
+  }
+
+  .bottom-nav {
+    position: absolute;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+  }
+
+  .sticky-bottom-action {
+    position: absolute;
+  }
+}

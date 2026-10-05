@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>ORDEXA — Customer Flow & Queue Management</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo/ordexa-favicon.svg" />
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/auth.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/explore.css" />
+  <link rel="stylesheet" href="css/organization.css" />
+  <link rel="stylesheet" href="css/service.css" />
+  <link rel="stylesheet" href="css/queue.css" />
+  <link rel="stylesheet" href="css/notifications.css" />
+  <link rel="stylesheet" href="css/profile.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <a href="#home" class="brand-link" style="display:flex;align-items:center;gap:8px;">
+        <img src="assets/logo/ordexa-logo.svg" alt="ORDEXA" class="brand-logo-img" style="width:36px;height:36px;" />
+        <img src="assets/logo/ordexa-wordmark.svg" alt="ORDEXA" style="height:22px;display:block;" />
+      </a>
+      <div style="display:flex;align-items:center;gap:6px;">
+        <a href="#alerts" class="header-action-btn" title="Notifications" aria-label="Notifications">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+            <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+          </svg>
+          <span id="header-unread-dot" class="badge-dot" style="display:none;"></span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Main Content Dynamic View Area -->
+    <main class="app-content" id="app-main-content">
+      <!-- Injected by OrdexaNav -->
+    </main>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+      <button class="nav-item active" data-target="home" onclick="OrdexaNav.navigate('home')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+          <polyline points="9 22 9 12 15 12 15 22" />
+        </svg>
+        <span>HOME</span>
+      </button>
+
+      <button class="nav-item" data-target="explore" onclick="OrdexaNav.navigate('explore')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <circle cx="12" cy="12" r="10" />
+          <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+        </svg>
+        <span>EXPLORE</span>
+      </button>
+
+      <button class="nav-item" data-target="alerts" onclick="OrdexaNav.navigate('alerts')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+          <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+        </svg>
+        <span>ALERTS</span>
+      </button>
+
+      <button class="nav-item" data-target="profile" onclick="OrdexaNav.navigate('profile')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+          <circle cx="12" cy="7" r="4" />
+        </svg>
+        <span>PROFILE</span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/storage.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/websocket.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/explore.js"></script>
+  <script src="js/organization.js"></script>
+  <script src="js/queue.js"></script>
+  <script src="js/service.js"></script>
+  <script src="js/notifications.js"></script>
+  <script src="js/qr-scanner.js"></script>
+  <script src="js/profile.js"></script>
+  <script src="js/navigation.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      OrdexaNav.init();
+
+      // Check unread notifications dot
+      function updateNotifDot() {
+        const u = OrdexaAPI.auth.getCurrentUser();
+        const dot = document.getElementById('header-unread-dot');
+        if (dot && u) {
+          const notifs = OrdexaStorage.Notifications.getByUser(u.id);
+          const hasUnread = notifs.some(n => !n.isRead);
+          dot.style.display = hasUnread ? 'block' : 'none';
+        }
+      }
+
+      updateNotifDot();
+      OrdexaRealtime.subscribe('notification_created', updateNotifDot);
+      OrdexaRealtime.subscribe('session_login', updateNotifDot);
+    });
+  </script>
+</body>
+</html>

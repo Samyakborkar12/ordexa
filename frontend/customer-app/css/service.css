@@ -1,0 +1,99 @@
+/* Service Detail & Pre-Join Queue */
+.service-header-hero {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  margin-bottom: var(--space-4);
+  box-shadow: var(--shadow-sm);
+}
+
+.service-title {
+  font-size: var(--font-size-xl);
+  font-weight: 800;
+  color: var(--primary-navy);
+  margin-bottom: var(--space-1);
+}
+
+.service-org-subtitle {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--primary-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--space-3);
+}
+
+/* Real-Time Queue Status Matrix */
+.queue-stats-matrix {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.stat-box {
+  background-color: var(--bg-surface-alt);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+  text-align: center;
+}
+
+.stat-box-val {
+  font-size: var(--font-size-2xl);
+  font-weight: 800;
+  color: var(--primary-navy);
+  line-height: 1.1;
+}
+
+.stat-box-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+/* Before You Join checklist */
+.notice-box {
+  background-color: #EFF6FF;
+  border: 1px solid #BFDBFE;
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+.notice-title {
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  color: #1E40AF;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--space-2);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.notice-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notice-list li {
+  font-size: var(--font-size-xs);
+  color: #1E3A8A;
+  margin-bottom: 6px;
+  position: relative;
+  padding-left: 14px;
+}
+
+.notice-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary-blue);
+  font-weight: bold;
+}

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <!-- Radial Backlight Glow -->
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="35%" stop-color="#EBF4FF" />
+      <stop offset="65%" stop-color="#93C5FD" />
+      <stop offset="85%" stop-color="#1D4ED8" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#052661" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Outer Hexagon Gradient -->
+    <linearGradient id="hexBorderGrad" x1="100" y1="50" x2="412" y2="462" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B3782" />
+      <stop offset="50%" stop-color="#042359" />
+      <stop offset="100%" stop-color="#021538" />
+    </linearGradient>
+
+    <!-- Glowing Chevrons Gradient -->
+    <linearGradient id="chvGrad" x1="220" y1="180" x2="400" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0066FF" />
+      <stop offset="100%" stop-color="#0050D6" />
+    </linearGradient>
+
+    <filter id="auraGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Outer Hexagonal Frame -->
+  <path d="M 256 60 L 405 146 C 420 155 430 171 430 188 L 430 324 C 430 341 420 357 405 366 L 256 452 C 242 460 224 460 210 452 L 61 366 C 46 357 36 341 36 324 L 36 188 C 36 171 46 155 61 146 L 210 60 C 224 52 242 52 256 60 Z" 
+        fill="url(#hexBorderGrad)" />
+
+  <!-- Inner Glowing Hexagonal Window -->
+  <path d="M 256 120 L 365 183 C 375 189 380 200 380 212 L 380 300 C 380 312 375 323 365 329 L 256 392 C 248 397 236 397 228 392 L 119 329 C 109 323 104 312 104 300 L 104 212 C 104 200 109 189 119 183 L 228 120 C 236 115 248 115 256 120 Z" 
+        fill="url(#centerGlow)" />
+
+  <!-- Two Rounded Forward Queue Chevrons (>> Fast Flow) -->
+  <!-- Chevron 1 -->
+  <path d="M 235 190 C 241 184 250 184 256 190 L 306 242 C 314 250 314 262 306 270 L 256 322 C 250 328 241 328 235 322 C 229 316 229 307 235 301 L 278 256 L 235 211 C 229 205 229 196 235 190 Z" 
+        fill="url(#chvGrad)" filter="url(#auraGlow)" />
+
+  <!-- Chevron 2 -->
+  <path d="M 310 190 C 316 184 325 184 331 190 L 381 242 C 389 250 389 262 381 270 L 331 322 C 325 328 316 328 310 322 C 304 316 304 307 310 301 L 353 256 L 310 211 C 304 205 304 196 310 190 Z" 
+        fill="url(#chvGrad)" filter="url(#auraGlow)" />
+</svg>

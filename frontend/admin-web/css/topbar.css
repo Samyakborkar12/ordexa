@@ -1,0 +1,75 @@
+/* Admin Topbar */
+.admin-topbar {
+  height: var(--topbar-height);
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  flex-shrink: 0;
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.org-switcher-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--bg-surface-alt);
+  padding: 6px 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+}
+
+.org-status-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background-color: #22C55E;
+}
+
+.org-name-text {
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  color: var(--primary-navy);
+}
+
+.org-category-pill {
+  font-size: 10px;
+  background-color: var(--primary-blue-subtle);
+  color: var(--primary-blue);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.topbar-btn {
+  background: none;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 6px 12px;
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.topbar-btn:hover {
+  background-color: var(--bg-surface-alt);
+  color: var(--text-main);
+}
